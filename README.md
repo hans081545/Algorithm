@@ -1,1 +1,9 @@
 # Algorithm
+## Setting
+
+* Editor: Xcode 8.3.3
+* Language: C++
+
+## List
+
+* Bubble Sort
