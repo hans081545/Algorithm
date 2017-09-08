@@ -7,3 +7,4 @@
 ## List
 
 * Bubble Sort
+* Selection Sort
