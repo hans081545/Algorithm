@@ -39,6 +39,7 @@ void printInsertNum (int insertArr[], int max) {
 
 void sort(int insertArr[], int max) {
     
+    int min;
     int temp;
     
     cout << "insert number : ";
@@ -47,13 +48,16 @@ void sort(int insertArr[], int max) {
     }
     
     for (int i=0; i<max-1; i++) {
+        min = i;
         for (int j=i+1; j<max; j++) {
-            if (insertArr[i] > insertArr[j]) {
-                temp = insertArr[i];
-                insertArr[i] = insertArr[j];
-                insertArr[j] = temp;
+            if (insertArr[min] > insertArr[j]) {
+                min = j;
             }
         }
+        
+        temp = insertArr[min];
+        insertArr[min] = insertArr[i];
+        insertArr[i] = temp;
         
         //start sort log//
         cout << "\n round " << i << " : ";
