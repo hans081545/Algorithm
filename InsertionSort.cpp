@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  insertionSort
+//  InsertionSort
 //
 //  Created by Kyungmin Han on 2017. 9. 9..
 //  Copyright © 2017년 han. All rights reserved.
@@ -36,14 +36,12 @@ void insertionSort(int insertArr[], int max) {
     
     for (int i=1; i<max; i++) {
         temp = insertArr[i];
-        for (int j=i-1; j>-2; j--) {
-            if (j == -1) {
-                insertArr[j+1] = temp;
-                break;
-            }
-            
+        for (int j=i-1; j>-1; j--) {
             if (temp < insertArr[j]) {
                 insertArr[j+1] = insertArr[j];
+                if (j == 0) {
+                    insertArr[j] = temp;
+                }
             } else {
                 insertArr[j+1] = temp;
                 break;
