@@ -10,3 +10,4 @@
 * Selection Sort
 * Insertion Sort
 * Merge Sort(studying...)
+* Quick Sort(studying...)
